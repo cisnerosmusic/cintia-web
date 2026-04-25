@@ -1,0 +1,26 @@
+/* TEAM */
+
+  Piano Teacher: Cintia Becerra
+  Site: https://cintiamusic.com
+  Location: Miami, Florida, USA
+  Origin: Santa Clara, Cuba
+
+/* SITE */
+
+  Last update: 2026/04/24
+  Language: Español / English
+  Doctype: HTML5
+  IDE: Hand-coded
+  Standards: HTML5, CSS3, ECMAScript 2020
+  Components: None. Pure HTML, CSS, and vanilla JavaScript.
+  Software: GitHub Pages
+  Typography: Cormorant Garamond, Inter (Google Fonts)
+
+/* THANKS */
+
+  This website was a birthday gift,
+  built with care, on a quiet evening,
+  by a friend who believed
+  she deserved her own corner of the internet.
+
+  La música no se enseña, se comparte.
