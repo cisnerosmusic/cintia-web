@@ -15,13 +15,19 @@ Una página simple, bilingüe (ES/EN) y sin imágenes, pensada como carta de pre
 - Tipografía: Cormorant Garamond + Inter (Google Fonts).
 - Toggle ES/EN con detección automática del idioma del navegador y persistencia en `localStorage`.
 - JSON-LD `Person` schema para SEO.
-- Desplegado en GitHub Pages.
+- `hreflang` para indicar idiomas alternativos a buscadores.
+- `llms.txt` para crawlers de modelos de lenguaje (Claude, ChatGPT, Perplexity, etc.).
+- Desplegado en GitHub Pages con HTTPS forzado.
 
 ## Estructura
 
 ```
 cintia-web/
 ├── index.html      Sitio completo (HTML, CSS y JS en un archivo)
+├── robots.txt      Permite indexación de buscadores y crawlers de IA
+├── sitemap.xml     Mapa del sitio para buscadores
+├── llms.txt        Resumen estructurado para modelos de lenguaje
+├── humans.txt      Créditos y guiño humano
 ├── .nojekyll       Evita el procesamiento de Jekyll en GitHub Pages
 ├── CNAME           Dominio personalizado: cintiamusic.com
 └── README.md
@@ -48,7 +54,7 @@ Cualquier push a `main` actualiza el sitio en vivo en aproximadamente un minuto.
 
 ## DNS
 
-Configuración de `cintiamusic.com` en el registrador del dominio:
+Configuración de `cintiamusic.com` en GoDaddy:
 
 | Tipo  | Host  | Valor                        |
 |-------|-------|------------------------------|
@@ -58,7 +64,13 @@ Configuración de `cintiamusic.com` en el registrador del dominio:
 | A     | @     | 185.199.111.153              |
 | CNAME | www   | cisnerosmusic.github.io      |
 
-Después del primer despliegue con el dominio personalizado, activar **Enforce HTTPS** en `Settings → Pages` (puede tardar 24 horas en estar disponible).
+## SEO y discoverability
+
+Tras el primer despliegue completo:
+
+- Indexar manualmente en [Google Search Console](https://search.google.com/search-console) añadiendo la propiedad `cintiamusic.com` y enviando el sitemap.
+- Indexar en [Bing Webmaster Tools](https://www.bing.com/webmasters).
+- Verificar que `llms.txt` sea accesible en `https://cintiamusic.com/llms.txt` para los crawlers de IA.
 
 ## Licencia
 
