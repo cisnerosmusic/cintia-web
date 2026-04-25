@@ -6,7 +6,7 @@ Sitio personal de **Cintia Becerra**, maestra de piano en Miami.
 
 ## Sobre el sitio
 
-Una página simple, bilingüe (ES/EN) y sin imágenes, pensada como carta de presentación profesional. Tipografía editorial, paleta cálida, cero dependencias pesadas.
+Una página simple y bilingüe (ES/EN), pensada como carta de presentación profesional. Tipografía editorial, paleta cálida, cero dependencias pesadas. El contenido visible se sostiene en tipografía y un ornamento musical en SVG; las imágenes se reservan para Open Graph (previsualización al compartir el link en redes y mensajería).
 
 ## Stack
 
@@ -24,6 +24,7 @@ Una página simple, bilingüe (ES/EN) y sin imágenes, pensada como carta de pre
 ```
 cintia-web/
 ├── index.html      Sitio completo (HTML, CSS y JS en un archivo)
+├── og-image.png    Tarjeta Open Graph (1200x630) para previsualización al compartir
 ├── robots.txt      Permite indexación de buscadores y crawlers de IA
 ├── sitemap.xml     Mapa del sitio para buscadores
 ├── llms.txt        Resumen estructurado para modelos de lenguaje
