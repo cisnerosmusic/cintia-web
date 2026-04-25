@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cintia Becerra · Maestra de Piano · Miami</title>
+  <meta name="description" content="Cintia Becerra, maestra de piano y educadora musical en Miami. Método Suzuki, Music 'Garten y teoría musical para niños. Vivace Arts Conservatory.">
+  <meta name="author" content="Cintia Becerra">
+  <link rel="canonical" href="https://cintiamusic.com/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Cintia Becerra · Maestra de Piano">
+  <meta property="og:description" content="Educadora musical en Miami. Piano, teoría musical y Music 'Garten para niños. Método Suzuki.">
+  <meta property="og:url" content="https://cintiamusic.com/">
+  <meta property="og:locale" content="es_US">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cintia Becerra · Maestra de Piano">
+  <meta name="twitter:description" content="Educadora musical en Miami. Piano y Music 'Garten para niños.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23faf6ec'/%3E%3Ctext x='50%25' y='52%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='20' fill='%23b88c3a' font-style='italic'%3EC%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cintia Becerra",
+    "alternateName": "Cintia Becerra Escandón",
+    "jobTitle": "Maestra de Piano",
+    "description": "Maestra de piano y educadora musical en Miami. Formada en Cuba y Paraguay. Método Suzuki, pedagogía Kodály, estimulación temprana.",
+    "url": "https://cintiamusic.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Miami",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "worksFor": {
+      "@type": "MusicSchool",
+      "name": "Vivace Arts Conservatory",
+      "url": "https://vivaceartsconservatory.com"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Instituto Superior de Pedagogía Félix Varela",
+        "address": "Cuba"
+      }
+    ],
+    "knowsLanguage": ["es", "en"],
+    "nationality": "Cuban",
+    "sameAs": [
+      "https://www.instagram.com/cintillabecerra",
+      "https://www.facebook.com/cintia.becerraescandon"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --cream: #faf6ec;
+      --cream-deep: #f3ecdb;
+      --text: #1f2a3a;
+      --muted: #6b6657;
+      --gold: #b88c3a;
+      --gold-soft: #d4b375;
+      --rule: #d8cfb8;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .lang-toggle {
+      position: fixed;
+      top: 24px;
+      right: 32px;
+      z-index: 100;
+      background: rgba(250, 246, 236, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      padding: 6px 8px;
+      display: flex;
+      gap: 2px;
+    }
+
+    .lang-toggle button {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-toggle button.active {
+      background: var(--gold);
+      color: var(--cream);
+    }
+
+    .lang-toggle button:hover:not(.active) {
+      color: var(--text);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 32px 60px;
+    }
+
+    @media (min-width: 768px) {
+      main { padding: 140px 32px 80px; }
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 32px;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(48px, 8vw, 84px);
+      line-height: 1;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--gold);
+    }
+
+    .hero-subtitle {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(20px, 3vw, 26px);
+      color: var(--muted);
+      font-weight: 400;
+      max-width: 540px;
+      margin: 0 auto 40px;
+      line-height: 1.4;
+    }
+
+    .ornament {
+      display: block;
+      margin: 0 auto;
+      width: 80px;
+      height: 24px;
+      opacity: 0.7;
+    }
+
+    /* Sections */
+    section.block {
+      margin-bottom: 80px;
+    }
+
+    .section-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .section-divider {
+      display: block;
+      margin: 0 auto 60px;
+      width: 60px;
+      height: 20px;
+      opacity: 0.5;
+    }
+
+    .prose p {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(19px, 2.4vw, 22px);
+      line-height: 1.55;
+      color: var(--text);
+      margin-bottom: 1.2em;
+    }
+
+    .prose p:last-child {
+      margin-bottom: 0;
+    }
+
+    .prose em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    /* Teaching list */
+    .teaching {
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .teaching-item {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--rule);
+      align-items: baseline;
+    }
+
+    .teaching-item:last-child {
+      border-bottom: none;
+    }
+
+    .teaching-key {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .teaching-value {
+      font-family: var(--serif);
+      font-size: 19px;
+      line-height: 1.4;
+      color: var(--text);
+    }
+
+    @media (max-width: 540px) {
+      .teaching-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 14px 0;
+      }
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .contact-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 4px;
+      border-bottom: 1px solid var(--rule);
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.2s ease;
+    }
+
+    .contact-link:hover {
+      padding-left: 12px;
+      color: var(--gold);
+    }
+
+    .contact-link:last-child {
+      border-bottom: none;
+    }
+
+    .contact-label {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .contact-arrow {
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 60px 32px;
+      border-top: 1px solid var(--rule);
+      margin-top: 40px;
+    }
+
+    .footer-text {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .footer-meta {
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      opacity: 0.7;
+    }
+
+    /* Language switching */
+    body[data-lang="en"] .es { display: none; }
+    body[data-lang="es"] .en { display: none; }
+
+    /* Subtle entrance */
+    @media (prefers-reduced-motion: no-preference) {
+      .hero, .block {
+        animation: fadeUp 0.9s ease-out backwards;
+      }
+      .hero { animation-delay: 0.1s; }
+      .block:nth-of-type(1) { animation-delay: 0.2s; }
+      .block:nth-of-type(2) { animation-delay: 0.3s; }
+      .block:nth-of-type(3) { animation-delay: 0.4s; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    ::selection {
+      background: var(--gold-soft);
+      color: var(--text);
+    }
+  </style>
+</head>
+<body data-lang="es">
+
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button id="btn-es" class="active" onclick="setLang('es')" aria-label="Español">ES</button>
+    <button id="btn-en" onclick="setLang('en')" aria-label="English">EN</button>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-eyebrow">
+        <span class="es">Maestra de Piano · Miami</span>
+        <span class="en">Piano Teacher · Miami</span>
+      </div>
+
+      <h1>Cintia <em>Becerra</em></h1>
+
+      <p class="hero-subtitle">
+        <span class="es">Cada niño puede aprender música. Mi trabajo es hacer que ese encuentro sea memorable.</span>
+        <span class="en">Every child can learn music. My work is to make that encounter memorable.</span>
+      </p>
+
+      <svg class="ornament" viewBox="0 0 80 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="0" y1="6" x2="32" y2="6" stroke="#b88c3a" stroke-width="0.5"/>
+        <line x1="0" y1="12" x2="32" y2="12" stroke="#b88c3a" stroke-width="0.5"/>
+        <line x1="0" y1="18" x2="32" y2="18" stroke="#b88c3a" stroke-width="0.5"/>
+        <ellipse cx="40" cy="12" rx="3.2" ry="2.4" fill="#b88c3a" transform="rotate(-18 40 12)"/>
+        <line x1="42.8" y1="11.5" x2="42.8" y2="2" stroke="#b88c3a" stroke-width="0.8"/>
+        <line x1="48" y1="6" x2="80" y2="6" stroke="#b88c3a" stroke-width="0.5"/>
+        <line x1="48" y1="12" x2="80" y2="12" stroke="#b88c3a" stroke-width="0.5"/>
+        <line x1="48" y1="18" x2="80" y2="18" stroke="#b88c3a" stroke-width="0.5"/>
+      </svg>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="block">
+      <div class="section-label">
+        <span class="es">Sobre mí</span>
+        <span class="en">About</span>
+      </div>
+
+      <div class="prose es">
+        <p>Soy maestra de piano. Antes de Miami fue Paraguay, antes de Paraguay fue Santa Clara, en Cuba, donde aprendí que la música no se enseña: <em>se comparte</em>.</p>
+
+        <p>Me formé como Licenciada en Educación Musical con especialidad en piano en el Instituto Superior de Pedagogía Félix Varela. Más tarde, en Asunción y en Caaguazú, fui sumando lo que cada lugar me regaló: la filosofía Suzuki, la pedagogía Kodály, la estimulación temprana.</p>
+
+        <p>Hoy doy clases en Vivace Arts Conservatory, en Miami. Trabajo con niños desde sus primeros pasos en la música hasta los diez u once años, en español y en inglés. Algunos de mis alumnos han recibido premios y menciones en concursos, pero lo que más me importa es lo otro: <em>que vuelvan cada semana con ganas, que el piano sea para ellos un lugar amable</em>.</p>
+      </div>
+
+      <div class="prose en">
+        <p>I am a piano teacher. Before Miami there was Paraguay; before Paraguay, Santa Clara, in Cuba, where I learned that music isn't taught: <em>it is shared</em>.</p>
+
+        <p>I trained as a Bachelor in Music Education with a piano specialty at the Félix Varela Higher Institute of Pedagogy. Later, in Asunción and in Caaguazú, I kept adding what each place offered me: the Suzuki philosophy, Kodály pedagogy, early stimulation.</p>
+
+        <p>Today I teach at Vivace Arts Conservatory, in Miami. I work with children from their very first steps in music up to ten or eleven years old, in Spanish and in English. Some of my students have received awards and honors in competitions, but what matters most to me is the other thing: <em>that they come back each week eager to play, that the piano feels like a kind place</em>.</p>
+      </div>
+    </section>
+
+    <!-- TEACHING -->
+    <section class="block">
+      <div class="section-label">
+        <span class="es">Lo que enseño</span>
+        <span class="en">What I teach</span>
+      </div>
+
+      <div class="teaching">
+        <div class="teaching-item">
+          <div class="teaching-key">
+            <span class="es">Piano</span>
+            <span class="en">Piano</span>
+          </div>
+          <div class="teaching-value">
+            <span class="es">Clases individuales para niños, desde los más pequeños hasta nivel junior.</span>
+            <span class="en">Individual lessons for children, from the youngest to junior level.</span>
+          </div>
+        </div>
+
+        <div class="teaching-item">
+          <div class="teaching-key">
+            <span class="es">Music 'Garten</span>
+            <span class="en">Music 'Garten</span>
+          </div>
+          <div class="teaching-value">
+            <span class="es">Iniciación musical para los más pequeños, donde el oído y el juego anteceden al instrumento.</span>
+            <span class="en">Musical initiation for the youngest, where the ear and play come before the instrument.</span>
+          </div>
+        </div>
+
+        <div class="teaching-item">
+          <div class="teaching-key">
+            <span class="es">Teoría Musical</span>
+            <span class="en">Music Theory</span>
+          </div>
+          <div class="teaching-value">
+            <span class="es">Integrada al instrumento, sin separar lo técnico de lo expresivo.</span>
+            <span class="en">Integrated with the instrument, without separating the technical from the expressive.</span>
+          </div>
+        </div>
+
+        <div class="teaching-item">
+          <div class="teaching-key">
+            <span class="es">Idiomas</span>
+            <span class="en">Languages</span>
+          </div>
+          <div class="teaching-value">
+            <span class="es">Español e inglés.</span>
+            <span class="en">Spanish and English.</span>
+          </div>
+        </div>
+
+        <div class="teaching-item">
+          <div class="teaching-key">
+            <span class="es">Dónde</span>
+            <span class="en">Where</span>
+          </div>
+          <div class="teaching-value">
+            <span class="es">Vivace Arts Conservatory, Miami-Dade.</span>
+            <span class="en">Vivace Arts Conservatory, Miami-Dade.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="block">
+      <div class="section-label">
+        <span class="es">Encontrarme</span>
+        <span class="en">Find me</span>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-link" href="https://vivaceartsconservatory.com" target="_blank" rel="noopener">
+          <span class="contact-label">Vivace Arts Conservatory</span>
+          <span class="contact-arrow">
+            <span class="es">Visitar</span>
+            <span class="en">Visit</span>
+          </span>
+        </a>
+
+        <a class="contact-link" href="https://www.instagram.com/cintillabecerra" target="_blank" rel="noopener">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-arrow">@cintillabecerra</span>
+        </a>
+
+        <a class="contact-link" href="https://www.facebook.com/cintia.becerraescandon" target="_blank" rel="noopener">
+          <span class="contact-label">Facebook</span>
+          <span class="contact-arrow">
+            <span class="es">Perfil</span>
+            <span class="en">Profile</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="footer-text">
+      <span class="es">La música no se enseña, se comparte.</span>
+      <span class="en">Music isn't taught, it is shared.</span>
+    </p>
+    <p class="footer-meta">
+      <span class="es">Cintia Becerra · Miami · MMXXVI</span>
+      <span class="en">Cintia Becerra · Miami · MMXXVI</span>
+    </p>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.body.setAttribute('data-lang', lang);
+      document.documentElement.setAttribute('lang', lang);
+      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      try { localStorage.setItem('cintia-lang', lang); } catch(e) {}
+    }
+
+    (function() {
+      let saved = null;
+      try { saved = localStorage.getItem('cintia-lang'); } catch(e) {}
+      if (saved === 'en' || saved === 'es') {
+        setLang(saved);
+        return;
+      }
+      const browser = (navigator.language || 'es').toLowerCase();
+      if (browser.startsWith('en')) setLang('en');
+    })();
+  </script>
+
+</body>
+</html>
