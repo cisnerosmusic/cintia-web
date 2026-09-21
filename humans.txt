@@ -7,14 +7,14 @@
 
 /* SITE */
 
-  Last update: 2026/04/24
+  Last update: 2026/09/20
   Language: Español / English
   Doctype: HTML5
   IDE: Hand-coded
   Standards: HTML5, CSS3, ECMAScript 2020
   Components: None. Pure HTML, CSS, and vanilla JavaScript.
   Software: GitHub Pages
-  Typography: Cormorant Garamond, Inter (Google Fonts)
+  Typography: Cormorant Garamond, Inter (self-hosted woff2)
 
 /* THANKS */
 

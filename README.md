@@ -6,33 +6,41 @@ Sitio personal de **Cintia Becerra**, maestra de piano en Miami.
 
 ## Sobre el sitio
 
-Una página simple y bilingüe (ES/EN), pensada como carta de presentación profesional. Tipografía editorial, paleta cálida, cero dependencias pesadas. El contenido visible se sostiene en tipografía y un ornamento musical en SVG; las imágenes se reservan para Open Graph (previsualización al compartir el link en redes y mensajería).
+Una sola página, bilingüe (ES/EN), pensada como carta de presentación profesional. Tipografía editorial, paleta cálida, cero dependencias pesadas y ningún dominio de terceros en la carga.
 
 ## Stack
 
-- HTML estático con CSS y JavaScript en un solo archivo.
-- Sin frameworks, sin build step, sin npm.
-- Tipografía: Cormorant Garamond + Inter (Google Fonts).
+- HTML estático con CSS y JavaScript en un único archivo. Sin frameworks, sin build step, sin npm.
+- Tipografía auto-hospedada en `fonts/`: Cormorant Garamond (redonda e itálica) e Inter, en `woff2` con subset latino, `font-display: swap` y `preload`. No se llama a Google Fonts.
 - Toggle ES/EN con detección automática del idioma del navegador y persistencia en `localStorage`.
-- JSON-LD `Person` schema para SEO.
-- `hreflang` para indicar idiomas alternativos a buscadores.
+- JSON-LD `Person` schema, `canonical`, `hreflang` y Open Graph con imagen propia (`og-image.png`, 1200x630).
+- Contraste AA verificado.
 - `llms.txt` para crawlers de modelos de lenguaje (Claude, ChatGPT, Perplexity, etc.).
-- Desplegado en GitHub Pages con HTTPS forzado.
+- Desplegado en GitHub Pages con HTTPS forzado y dominio propio.
 
 ## Estructura
 
 ```
 cintia-web/
-├── index.html      Sitio completo (HTML, CSS y JS en un archivo)
-├── og-image.png    Tarjeta Open Graph (1200x630) para previsualización al compartir
-├── robots.txt      Permite indexación de buscadores y crawlers de IA
-├── sitemap.xml     Mapa del sitio para buscadores
-├── llms.txt        Resumen estructurado para modelos de lenguaje
-├── humans.txt      Créditos y guiño humano
-├── .nojekyll       Evita el procesamiento de Jekyll en GitHub Pages
-├── CNAME           Dominio personalizado: cintiamusic.com
+├── index.html                          Sitio completo (HTML, CSS y JS en un archivo)
+├── fonts/                              Tipografías auto-hospedadas
+│   ├── cormorant-garamond.woff2
+│   ├── cormorant-garamond-italic.woff2
+│   └── inter.woff2
+├── og-image.png                        Imagen para redes sociales (1200x630)
+├── robots.txt                          Permite indexación de buscadores y crawlers de IA
+├── sitemap.xml                         Mapa del sitio para buscadores
+├── llms.txt                            Resumen estructurado para modelos de lenguaje
+├── humans.txt                          Créditos y guiño humano
+├── google85530d12f607d7f9.html         Verificación de Google Search Console (no borrar)
+├── .nojekyll                           Evita el procesamiento de Jekyll en GitHub Pages
+├── CNAME                               Dominio personalizado: cintiamusic.com
 └── README.md
 ```
+
+## Peso
+
+La primera carga son `index.html` (22 KB) más las tres tipografías (110 KB): unos 132 KB en total, sin peticiones a dominios externos. `og-image.png` solo lo descargan los rastreadores de redes sociales.
 
 ## Desarrollo local
 
@@ -40,10 +48,10 @@ No hay build. Para previsualizar:
 
 ```bash
 # Opción 1: abrir directamente
-open index.html
+start index.html
 
-# Opción 2: servidor local con Python
-python3 -m http.server 8000
+# Opción 2: servidor local con Python (recomendado, las fuentes se sirven bien)
+python -m http.server 8000
 # luego abrir http://localhost:8000
 ```
 
@@ -67,11 +75,14 @@ Configuración de `cintiamusic.com` en GoDaddy:
 
 ## SEO y discoverability
 
-Tras el primer despliegue completo:
+- **Google Search Console:** propiedad verificada por archivo HTML en la raíz (`google85530d12f607d7f9.html`). Google exige que ese archivo siga accesible, así que no se borra ni se renombra.
+- **Sitemap:** enviar o reenviar `https://cintiamusic.com/sitemap.xml` desde Search Console tras cambios de contenido, y actualizar el `lastmod` cuando el contenido cambie de verdad.
+- **Bing Webmaster Tools:** se puede importar la propiedad directamente desde Search Console.
+- **Crawlers de IA:** verificar que `https://cintiamusic.com/llms.txt` siga accesible.
 
-- Indexar manualmente en [Google Search Console](https://search.google.com/search-console) añadiendo la propiedad `cintiamusic.com` y enviando el sitemap.
-- Indexar en [Bing Webmaster Tools](https://www.bing.com/webmasters).
-- Verificar que `llms.txt` sea accesible en `https://cintiamusic.com/llms.txt` para los crawlers de IA.
+## Créditos
+
+Desarrollado por [Index01](https://index01.net) para Cintia.
 
 ## Licencia
 
